@@ -7,6 +7,7 @@ target 'HackMx' do
 
   # Pods for HackMx
   pod 'Firebase/Core'
+  pod 'ARCL'
 
   target 'HackMxTests' do
     inherit! :search_paths
