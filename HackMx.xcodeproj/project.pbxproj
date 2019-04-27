@@ -17,6 +17,10 @@
 		E5F554C62274B1F100A70CF6 /* HackMxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F554C52274B1F100A70CF6 /* HackMxUITests.swift */; };
 		E5F554D42274BCA400A70CF6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5F554D32274BCA400A70CF6 /* GoogleService-Info.plist */; };
 		E5F554D92274C23E00A70CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F554D72274C23D00A70CF6 /* Main.storyboard */; };
+		E5F554DB2274E46E00A70CF6 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E5F554DA2274E46E00A70CF6 /* shaders.metal */; };
+		E5F554DF2274F48E00A70CF6 /* SCNGeometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F554DC2274F48D00A70CF6 /* SCNGeometry+Extensions.swift */; };
+		E5F554E02274F48E00A70CF6 /* SCNPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F554DD2274F48D00A70CF6 /* SCNPathNode.swift */; };
+		E5F554E12274F48E00A70CF6 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F554DE2274F48E00A70CF6 /* SCNVector3+Extensions.swift */; };
 		F986E01AAE7AFA458D49F6F5 /* Pods_HackMxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F95A17BE818919455818CC /* Pods_HackMxUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		E5F554C72274B1F100A70CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5F554D32274BCA400A70CF6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5F554D82274C23D00A70CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5F554DA2274E46E00A70CF6 /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		E5F554DC2274F48D00A70CF6 /* SCNGeometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNGeometry+Extensions.swift"; sourceTree = "<group>"; };
+		E5F554DD2274F48D00A70CF6 /* SCNPathNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNPathNode.swift; sourceTree = "<group>"; };
+		E5F554DE2274F48E00A70CF6 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +152,10 @@
 				E5F554AC2274B1F000A70CF6 /* Assets.xcassets */,
 				E5F554D72274C23D00A70CF6 /* Main.storyboard */,
 				E5F554AE2274B1F000A70CF6 /* LaunchScreen.storyboard */,
+				E5F554DA2274E46E00A70CF6 /* shaders.metal */,
+				E5F554DC2274F48D00A70CF6 /* SCNGeometry+Extensions.swift */,
+				E5F554DD2274F48D00A70CF6 /* SCNPathNode.swift */,
+				E5F554DE2274F48E00A70CF6 /* SCNVector3+Extensions.swift */,
 				E5F554D32274BCA400A70CF6 /* GoogleService-Info.plist */,
 				E5F554B12274B1F000A70CF6 /* Info.plist */,
 			);
@@ -400,7 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F554A82274B1EF00A70CF6 /* ViewController.swift in Sources */,
+				E5F554E12274F48E00A70CF6 /* SCNVector3+Extensions.swift in Sources */,
 				E5F554A62274B1EF00A70CF6 /* AppDelegate.swift in Sources */,
+				E5F554DF2274F48E00A70CF6 /* SCNGeometry+Extensions.swift in Sources */,
+				E5F554DB2274E46E00A70CF6 /* shaders.metal in Sources */,
+				E5F554E02274F48E00A70CF6 /* SCNPathNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,7 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X6WDFAAD3;
 				INFOPLIST_FILE = HackMx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,7 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5X6WDFAAD3;
 				INFOPLIST_FILE = HackMx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
