@@ -1,0 +1,6 @@
+framework module Pods_HackMxUITests {
+  umbrella header "Pods-HackMxUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
