@@ -8,6 +8,8 @@ target 'HackMx' do
   # Pods for HackMx
   pod 'Firebase/Core'
   pod 'ARCL'
+  pod 'ARCore', '~> 1.4.0'
+  pod 'Firebase/Database'
 
   target 'HackMxTests' do
     inherit! :search_paths

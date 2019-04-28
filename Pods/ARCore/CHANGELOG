@@ -1,0 +1,37 @@
+Version 1.4.0 (2018-08)
+==========================
+Resolved Issues:
+  - Fixed an issue where hosting and resolving cloud anchors would fail on iOS
+    12 with the new 4:3 aspect ratio.
+
+Version 1.3.0 (2018-06-21)
+==========================
+Adds support for ARKit-compatible iPads. These include:
+  - iPad: 5th and 6th generation
+  - iPad Pro: 12.9 inch (1st and 2nd gen), 10.5 inch, 9.7 inch
+
+Resolved Issues:
+  - Fixed an issue where an invalid API key for the ARCore Cloud Anchor Service
+    would result in a cloud anchor state of `GARCloudAnchorStateErrorInternal`.
+    The error state will now be `GARCloudAnchorStateErrorNotAuthorized`.
+
+Version 1.2.1 (2018-05-30)
+==========================
+Resolved Issues:
+  - Removed SDK references to `ARFaceAnchor`. The `hostCloudAnchor:`
+    implementation no longer checks that the passed in `ARAnchor` is not an
+    `ARFaceAnchor`, and no longer forcibly exits with
+    `GARSessionErrorCodeAnchorNotSupportedForHosting`. However, use of
+    `ARFaceAnchor`s remains unsupported in this release.
+
+Version 1.2.0 (2018-05-08)
+==========================
+Initial release alongside ARCore 1.2 on Android.
+- Support for Cloud Anchors.
+- Supported devices: iPhone X, 8, 8+, 7, 7+, 6S, 6S+, SE.
+
+Known Issues:
+  - An invalid API key for the ARCore Cloud Anchor Service will result in a
+    Cloud Anchor state of `GARCloudAnchorStateErrorInternal` instead of
+    `GARCloudAnchorStateErrorNotAuthorized`. This is a known issue and will be
+    fixed in an upcoming release.
